@@ -1,0 +1,206 @@
+body {
+    background-image: url("images/bg.webp");
+    background-attachment: fixed;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+
+
+
+
+
+.holder {
+    background-color: white;
+    align-items: center;
+
+
+    width: 100%;
+
+
+
+}
+
+.content {
+
+    align-items: center;
+
+
+    width: 80%;
+
+
+}
+
+
+
+pd {
+    color: rgb(189, 189, 189);
+    text-shadow: 3px 3px 5px black;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    padding: 14px 16px;
+    overflow: hidden;
+    height: 120px;
+    padding-right: 10%;
+    padding-left: 11%;
+
+}
+
+.bottom {
+    height: 30px;
+    width: 100%;
+    background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255, 255, 255, 1)), to(rgba(255, 255, 255, 0)));
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    background-image: -o-linear-gradient(top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(0, 0, 0, 0));
+    background-repeat: repeat-x;
+}
+
+/* Style the links inside the navigation bar */
+.topnav .topbtn {
+    margin: 10px;
+    border-radius: 10px;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    opacity: 80%;
+    float: right;
+    margin-top: 70px;
+
+    transition: 0.3s;
+
+}
+
+.pagelogo1 {
+
+    border-radius: 10px;
+    color: #ffffff;
+    float: left;
+    padding: 4px 7px;
+
+
+
+
+    transition: 0.3s;
+
+}
+
+.colorbar {
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    height: 5px;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
+/* Change the color of links on hover */
+.topnav .topbtn:hover {
+    background-color: #ffffff;
+    color: black;
+    opacity: 60%;
+    transition: 0.3s;
+    transform: scale(1.18);
+    box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 255);
+}
+
+.pagelogo1:hover {
+    background-color: #ffffff32;
+    color: black;
+
+    transition: 0.3s;
+    transform: scale(1.03);
+    box-shadow: 0 20px 36px 0 rgba(0, 0, 0, 255);
+
+}
+
+
+fa fa-moon-o {
+    font-size: 24px;
+    color: white;
+}
+
+.rockstaricon1 {}
+
+/*@media (prefers-color-scheme: dark) {*/
+.holder {
+    background-color: #202020;
+}
+
+.content {
+    color: white;
+}
+
+.bottom {
+    height: 40px;
+    width: 100%;
+    background-image: -moz-linear-gradient(top, rgb(32, 32, 32), rgba(32, 32, 32, 0));
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(32, 32, 32, 1)), to(rgba(32, 32, 32, 0)));
+    background-image: -webkit-linear-gradient(top, rgba(32, 32, 32, 1), rgba(32, 32, 32, 0));
+    background-image: -o-linear-gradient(top, rgba(32, 32, 32, 1), rgba(32, 32, 32, 0));
+    background-image: linear-gradient(to bottom, rgba(32, 32, 32, 1), rgba(0, 0, 0, 0));
+    background-repeat: repeat-x;
+}
+
+.rockstaricon1 {
+    color: white;
+}
+
+/*}*/
+
+
+
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+    width: 250px;
+    height: 390px;
+    background-color: rgb(42, 42, 42);
+
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0px 30px 42px 0 rgba(0, 0, 0, 1);
+    background-color: rgb(53, 53, 53);
+    transform: scale(1.03);
+
+}
+
+/* Add some padding inside the card container */
+.card .cocococo {
+    padding: 2px 16px;
+}
+
+.goodbtn {
+    border-radius: 10px;
+    color: #ffffff;
+    background-color: white;
+    color: black;
+    padding: 14px 16px;
+    transition: 0.3s;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 255);
+}
+
+.goodbtn:hover {
+    border-radius: 20px;
+    background-color: rgb(46, 46, 46);
+    color: rgb(255, 255, 255);
+
+    transition: 0.3s;
+    transform: scale(1.2);
+    box-shadow: 7px 7px 10px 0 rgba(0, 0, 0, 255);
+
+
+}
