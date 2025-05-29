@@ -194,10 +194,11 @@ fa fa-moon-o {
 
 .card:hover .blurred-img {
 
-    box-shadow: 0 0 3px 3px rgb(53, 53, 53) inset;
+    box-shadow: 0 0 2px 2px rgb(53, 53, 53) inset;
     transition: 0.2s;
-    transform: scale(0.95);
+    transform: scale(0.97);
     transform-origin: 50% 50%;
+    
 
 
 }
