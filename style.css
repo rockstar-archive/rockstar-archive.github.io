@@ -91,23 +91,19 @@ pd {
 
 }
 
-.colorbar {
-    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
-    height: 5px;
-    width: 100%;
-    margin-top: 0px;
-    margin-bottom: 0px;
 
-}
 
 /* Change the color of links on hover */
 .topnav .topbtn:hover {
+
     background-color: #ffffff;
     color: black;
     opacity: 60%;
     transition: 0.3s;
     transform: scale(1.18);
     box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 255);
+    transform: translateY(-3px);
+
 }
 
 .pagelogo1:hover {
@@ -126,7 +122,6 @@ fa fa-moon-o {
     color: white;
 }
 
-.rockstaricon1 {}
 
 /*@media (prefers-color-scheme: dark) {*/
 .holder {
@@ -166,7 +161,7 @@ fa fa-moon-o {
     height: 400px;
     background-color: rgb(42, 42, 42);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
- overflow: hidden; 
+    overflow: hidden;
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -194,14 +189,17 @@ fa fa-moon-o {
     /*box-shadow: 0 0 8px 8px rgba(42, 42, 42, 255) inset;*/
     transition: 0.2s;
     overflow: hidden;
+
 }
 
 .card:hover .blurred-img {
-    overflow: hidden;
-    box-shadow: 0 0 6px 6px rgb(53, 53, 53) inset;
+
+    box-shadow: 0 0 3px 3px rgb(53, 53, 53) inset;
     transition: 0.2s;
     transform: scale(0.95);
     transform-origin: 50% 50%;
+
+
 }
 
 .goodbtn {
@@ -210,26 +208,60 @@ fa fa-moon-o {
     background-color: white;
     color: black;
     padding: 14px 16px;
-    transition: 0.2s;
+    transition: 0.3s;
     text-decoration: none;
     font-family: 'Courier New', Courier, monospace;
     box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 255);
 }
 
 .goodbtn:hover {
+
     border-radius: 20px;
-    background-color: rgb(46, 46, 46);
+    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+    background-size: 100% 100%;
     color: rgb(255, 255, 255);
 
-    transition: 0.2s;
-    transform: scale(1.2);
+    transition: 0.3s;
+    transform-origin: 50% 50%;
     box-shadow: 7px 7px 10px 0 rgba(0, 0, 0, 255);
+    background-repeat: repeat-x;
+    background: linear-gradient(to right,
+            #e42828,
+            #fe8616,
+            #ffbf35,
+            #76ff45,
+            #426bff,
+            #e42828);
+    animation: rainbow 10s linear infinite;
+    background-size: 200% 100% !important;
+    text-shadow: 2px 2px 2px black;
+    transform: scale(1.2);
+    transform: translateY(-3px);
+}
 
+.colorbar {
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    height: 5px;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
 
 }
-h1{
+
+
+@keyframes rainbow {
+    0% {
+        background-position: 0;
+    }
+
+    100% {
+        background-position: 800% 0;
+    }
+}
+
+h1 {
     font-size: 2.5em;
     text-align: center;
-   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: white;
 }
