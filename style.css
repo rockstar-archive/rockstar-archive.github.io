@@ -198,7 +198,7 @@ fa fa-moon-o {
     transition: 0.2s;
     transform: scale(0.97);
     transform-origin: 50% 50%;
-    
+
 
 
 }
@@ -265,4 +265,15 @@ h1 {
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: white;
+}
+
+.betascreen {
+    box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 255);
+    transition: 0.3s;
+}
+
+.betascreen:hover {
+    box-shadow: 20px 20px 30px 0 rgba(0, 0, 0, 255);
+    transition: 0.3s;
+    transform: scale(1.03);
 }
