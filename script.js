@@ -2,8 +2,16 @@ function dailyBetaScreenshot() {
     //const randomNumber = getRandomInt(1, 24); 
     const randomNumber = getDailyNumber();
     console.log(randomNumber + " - Daily Beta Screenshot");
-    document.getElementById("betascreenimg").src = "images/betaScreens/betaimg" + randomNumber + ".webp";
-    document.getElementById("betascreenlink").href = "images/betaScreens/betaimg" + randomNumber + ".webp";
+
+    if (randomNumber > 24) {
+        document.getElementById("betascreenimg").src = "images/betaScreens/gtaiv/betaimg" + (randomNumber - 24) + ".webp";
+        document.getElementById("betascreenlink").href = "images/betaScreens/gtaiv/betaimg" + (randomNumber - 24) + ".webp";
+        document.getElementById("betascreentext").innerHTML = "Grand Theft Auto IV";
+    } else {
+        document.getElementById("betascreenimg").src = "images/betaScreens/gtav/betaimg" + randomNumber + ".webp";
+        document.getElementById("betascreenlink").href = "images/betaScreens/gtav/betaimg" + randomNumber + ".webp";
+        document.getElementById("betascreentext").innerHTML = "Grand Theft Auto V";
+    }
 }
 
 function getDailyNumber(min = 1, max = 24) {
@@ -23,7 +31,7 @@ function getDailyNumber(min = 1, max = 24) {
     return number;
 }
 function getRandomInt(min, max) {
-  min = Math.ceil(min);   // Round up
-  max = Math.floor(max);  // Round down
-  return Math.floor(Math.random() * (max - min + 1)) + min;
+    min = Math.ceil(min);   // Round up
+    max = Math.floor(max);  // Round down
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
