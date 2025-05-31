@@ -1,5 +1,16 @@
 function dailyBetaScreenshot() {
-    const randomNumber = getRandomInt(1, 28); 
+    const today = new Date().toISOString().split('T')[0];
+
+    console.log("Today's date: " + today);
+
+
+    if (localStorage.getItem("date") !== today) {
+        const rand = getRandomInt(1, 28);
+        localStorage.setItem("date", today);
+        localStorage.setItem("num", rand);
+    }
+    const randomNumber = localStorage.getItem("num");
+
     //const randomNumber = getDailyNumber();
     console.log(randomNumber + " - Daily Beta Screenshot");
 
