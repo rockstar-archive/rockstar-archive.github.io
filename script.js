@@ -4,12 +4,12 @@ function dailyBetaScreenshot() {
     console.log("Today's date: " + today);
 
 
-    if (localStorage.getItem("date") !== today) {
+    if (localStorage.getItem("mainpage_date") !== today) {
         const rand = getRandomInt(1, 28);
-        localStorage.setItem("date", today);
-        localStorage.setItem("num", rand);
+        localStorage.setItem("mainpage_date", today);
+        localStorage.setItem("mainpage_num", rand);
     }
-    const randomNumber = localStorage.getItem("num");
+    const randomNumber = localStorage.getItem("mainpage_num");
 
     //const randomNumber = getDailyNumber();
     console.log(randomNumber + " - Daily Beta Screenshot");
