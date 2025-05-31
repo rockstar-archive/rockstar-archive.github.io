@@ -1,11 +1,11 @@
 function dailyBetaScreenshot() {
-    const randomNumber = getRandomInt(1, 24); 
+    const randomNumber = getRandomInt(1, 28); 
     //const randomNumber = getDailyNumber();
     console.log(randomNumber + " - Daily Beta Screenshot");
 
     if (randomNumber > 24) {
-        document.getElementById("betascreenimg").src = "images/betaScreens/gtaiv/betaimg" + (randomNumber - 24) + ".webp";
-        document.getElementById("betascreenlink").href = "images/betaScreens/gtaiv/betaimg" + (randomNumber - 24) + ".webp";
+        document.getElementById("betascreenimg").src = "images/betaScreens/gtaiv/betaimgiv" + (randomNumber - 24) + ".webp";
+        document.getElementById("betascreenlink").href = "images/betaScreens/gtaiv/betaimgiv" + (randomNumber - 24) + ".webp";
         document.getElementById("betascreentext").innerHTML = "Grand Theft Auto IV";
     } else {
         document.getElementById("betascreenimg").src = "images/betaScreens/gtav/betaimg" + randomNumber + ".webp";
@@ -14,7 +14,7 @@ function dailyBetaScreenshot() {
     }
 }
 
-function getDailyNumber(min = 1, max = 24) {
+function getDailyNumber(min = 1, max = 28) {
     // Get today's date as a string (e.g., "2025-05-30")
     const today = new Date().toISOString().split('T')[0];
 
