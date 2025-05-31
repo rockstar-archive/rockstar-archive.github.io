@@ -1,6 +1,6 @@
 function dailyBetaScreenshot() {
-    //const randomNumber = getRandomInt(1, 24); 
-    const randomNumber = getDailyNumber();
+    const randomNumber = getRandomInt(1, 24); 
+    //const randomNumber = getDailyNumber();
     console.log(randomNumber + " - Daily Beta Screenshot");
 
     if (randomNumber > 24) {
