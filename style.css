@@ -76,6 +76,26 @@ pd {
     transition: 0.3s;
 
 }
+.topnav .topbtnACTIVE{
+      margin: 10px;
+    border-radius: 10px;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    opacity: 80%;
+    float: right;
+    margin-top: 70px;
+
+    background-color: #ffffff;
+    color: black;
+    opacity: 60%;
+    transition: 0.3s;
+    transform: scale(1.18);
+    box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 255);
+    transform: translateY(-3px);
+}
 
 .pagelogo1 {
 
