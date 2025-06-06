@@ -19,7 +19,7 @@ function dailyBetaScreenshot() {
         document.getElementById("betascreenlink").href = "images/betaScreens/gtaiv/betaimgiv" + (randomNumber - 24) + ".webp";
         document.getElementById("betascreentext").innerHTML = "Grand Theft Auto IV";
     }
-     if (randomNumber > 28) {
+    else if (randomNumber > 28) {
         document.getElementById("betascreenimg").src = "images/betaScreens/gta3/betaimgiii" + (randomNumber - 28) + ".webp";
         document.getElementById("betascreenlink").href = "images/betaScreens/gta3/betaimgiii" + (randomNumber - 28) + ".webp";
         document.getElementById("betascreentext").innerHTML = "Grand Theft Auto III";

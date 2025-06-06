@@ -76,8 +76,9 @@ pd {
     transition: 0.3s;
 
 }
-.topnav .topbtnACTIVE{
-      margin: 10px;
+
+.topnav .topbtnACTIVE {
+    margin: 10px;
     border-radius: 10px;
     color: #ffffff;
     text-align: center;
@@ -296,4 +297,90 @@ h1 {
     box-shadow: 20px 20px 30px 0 rgba(0, 0, 0, 255);
     transition: 0.3s;
     transform: scale(1.03);
+}
+
+.pagelogoimg {
+    width: 400px;
+    height: 100px;
+}
+
+@media screen and (max-width: 1039px) {
+    .topnav {
+        height: auto;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .topnav .topbtn,
+    .topnav .topbtnACTIVE {
+        float: none;
+        margin-top: 5px;
+        width: 80%;
+        text-align: center;
+    }
+
+    .topnav .topbtnACTIVE {
+
+        border-radius: 10px;
+        color: #ffffff;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        opacity: 80%;
+        float: right;
+
+
+        background-color: #ffffff;
+        color: black;
+        opacity: 60%;
+        transition: 0.3s;
+        transform: scale(1.18);
+        box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 255);
+        transform: translateY(-3px);
+    }
+
+    .pagelogo1 {
+        float: none;
+        margin-bottom: 10px;
+    }
+
+    .pagelogoimg {
+        width: 280px;
+        height: 70px;
+    }
+
+    .content {
+        width: 95%;
+    }
+
+    .card {
+        width: 90%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .card .blurred-img {
+        width: 100%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .goodbtn {
+        border-radius: 5px;
+        color: #ffffff;
+        background-color: white;
+        color: black;
+        padding: 4px 6px;
+        transition: 0.3s;
+        text-decoration: none;
+        font-family: 'Courier New', Courier, monospace;
+        box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 255);
+    }
+
 }
