@@ -14,16 +14,17 @@ function dailyBetaScreenshot() {
     //const randomNumber = getDailyNumber();
     console.log(randomNumber + " - Daily Beta Screenshot");
 
-    if (randomNumber > 24) {
-        document.getElementById("betascreenimg").src = "images/betaScreens/gtaiv/betaimgiv" + (randomNumber - 24) + ".webp";
-        document.getElementById("betascreenlink").href = "images/betaScreens/gtaiv/betaimgiv" + (randomNumber - 24) + ".webp";
-        document.getElementById("betascreentext").innerHTML = "Grand Theft Auto IV";
-    }
-    else if (randomNumber > 28) {
+    
+    if (randomNumber > 28) {
         document.getElementById("betascreenimg").src = "images/betaScreens/gta3/betaimgiii" + (randomNumber - 28) + ".webp";
         document.getElementById("betascreenlink").href = "images/betaScreens/gta3/betaimgiii" + (randomNumber - 28) + ".webp";
         document.getElementById("betascreentext").innerHTML = "Grand Theft Auto III";
-    }  else {
+    }  
+	else if (randomNumber > 24) {
+        document.getElementById("betascreenimg").src = "images/betaScreens/gtaiv/betaimgiv" + (randomNumber - 24) + ".webp";
+        document.getElementById("betascreenlink").href = "images/betaScreens/gtaiv/betaimgiv" + (randomNumber - 24) + ".webp";
+        document.getElementById("betascreentext").innerHTML = "Grand Theft Auto IV";
+    }else {
         document.getElementById("betascreenimg").src = "images/betaScreens/gtav/betaimg" + randomNumber + ".webp";
         document.getElementById("betascreenlink").href = "images/betaScreens/gtav/betaimg" + randomNumber + ".webp";
         document.getElementById("betascreentext").innerHTML = "Grand Theft Auto V";
