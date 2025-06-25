@@ -1,2 +1,2 @@
 # therockstararchive
-# https://the-rg-archive.github.io
+# https://rockstar-archive.github.io
