@@ -349,13 +349,15 @@ footer {
     box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.5);
     transition: 0.2s;
     width: 250px;
-    height: 335px;
+    height: 370px;
     background-color: rgb(42, 42, 42);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     overflow: hidden;
     align-items: center;
 }
-
+.card .cocococo {
+    padding: 7px 16px;
+}
 .card:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
@@ -404,7 +406,4 @@ footer {
     .holder {
         background: white;
     }
-}
-.card .cocococo {
-    padding: 1px 16px;
 }
