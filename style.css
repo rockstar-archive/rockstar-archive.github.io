@@ -123,7 +123,7 @@ h1 {
 .hero h1 {
     font-size: 3.5rem;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
 }
 
 .hero h1 img {
@@ -455,7 +455,7 @@ footer {
 
 .stat-icon {
     font-size: 2.5rem;
-    color: #ff6b35;
+    background: linear-gradient(to right, #98BEEE, #DF2567); -webkit-text-fill-color: transparent; -webkit-background-clip: text; 
     margin-bottom: 15px;
 }
 
@@ -567,7 +567,7 @@ footer {
 	}
 	
 	.update-item h3 {
-		color: #ff8e53;
+		background: linear-gradient(to right, #98BEEE, #DF2567); -webkit-text-fill-color: transparent; -webkit-background-clip: text; 
 		font-size: 1.2rem;
 		margin-bottom: 15px;
 		display: flex;
@@ -599,3 +599,8 @@ footer {
 			padding: 20px;
 		}
 	}
+
+
+    .highlight{
+        background: linear-gradient(to right, #98BEEE, #DF2567); -webkit-text-fill-color: transparent; -webkit-background-clip: text; 
+    }
