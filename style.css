@@ -1,3 +1,7 @@
+/* ============================================================
+   GLOBAL RESET
+   ============================================================ */
+
 * {
     margin: 0;
     padding: 0;
@@ -16,20 +20,9 @@ body {
     flex-direction: column;
 }
 
-.holder {
-    background-color: #202020;
-    width: 100%;
-    flex: 1;
-    position: relative;
-}
-
-.content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    width: 90%;
-}
-
+/* ============================================================
+   HEADER + NAVIGATION
+   ============================================================ */
 
 header {
     background-image: url("images/bg.webp");
@@ -74,19 +67,18 @@ header {
     object-fit: contain;
 }
 
-
+/* NAV BUTTONS */
 .topbtn,
 .topbtnACTIVE {
     border-radius: 10px;
-    color: #ffffff;
-    text-align: center;
     padding: 12px 20px;
-    text-decoration: none;
     font-size: 16px;
     font-weight: 500;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    transition: all 0.3s ease;
     position: relative;
-    overflow: hidden;
 }
 
 .topbtn {
@@ -97,150 +89,156 @@ header {
 .topbtn:hover {
     background: rgba(255, 255, 255, 0.2);
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
 
 .topbtnACTIVE {
     background: white;
     color: black;
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
     font-weight: 600;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
 }
 
+/* ============================================================
+   CONTENT WRAPPER
+   ============================================================ */
 
-.hero {
-    text-align: center;
-    padding: 40px 20px;
-}
-
-.hero h1 {
-    font-size: 3.5rem;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.hero h1 img {
-    height: 1em;
-    vertical-align: middle;
-    margin-left: 10px;
-}
-
-.lead {
-    font-size: 1.2rem;
-    color: #e0e0e0;
-    margin-bottom: 30px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-.cta-buttons {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.goodbtn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    border-radius: 12px;
-    background: white;
-    color: black;
-    padding: 15px 30px;
-    text-decoration: none;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-    font-size: 1.1rem;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    transition: all 0.3s ease;
-    border: none;
-    cursor: pointer;
-    min-width: 200px;
-}
-
-.goodbtn:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-    background: linear-gradient(45deg, #ff2400, #e81d1d, #e8b71d);
-    color: white;
-    animation: gradientShift 3s ease infinite;
-}
-
-.discord-btn {
-    background: #5865F2;
-    color: white;
-}
-
-
-.daily-feature {
-    text-align: center;
-    padding: 40px 0;
-}
-
-.daily-feature h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.betascreen {
-    max-width: 800px;
+.holder {
+    background-color: #202020;
     width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-    transition: all 0.3s ease;
-    cursor: pointer;
+    flex: 1;
 }
 
-.betascreen:hover {
-    transform: scale(1.02);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+.content {
+    max-width: 1200px;
+    padding: 20px;
+    margin: 0 auto;
+    width: 90%;
 }
 
-figcaption {
-    margin-top: 15px;
-    font-style: italic;
-    color: #aaa;
-    font-size: 1.1rem;
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin: 30px 0 15px;
 }
 
+/* ============================================================
+   COLOR BAR (TOP ANIMATION)
+   ============================================================ */
 
 .colorbar {
     height: 5px;
     width: 100%;
     background: linear-gradient(90deg,
-            red 0%,
-            orange 16.66%,
-            yellow 33.33%,
-            green 50%,
-            blue 66.66%,
-            indigo 83.33%,
-            violet 100%,
-            red 100%);
+        red 0%, orange 16.66%, yellow 33.33%,
+        green 50%, blue 66.66%, indigo 83.33%, violet 100%
+    );
     background-size: 200% 100%;
-    position: fixed;
     animation: gradientShift 10s ease infinite;
-    z-index: 100000;
+    position: fixed;
+    z-index: 9999;
 }
-
 
 @keyframes gradientShift {
-    0% {
-        background-position: 200% 0;
-    }
-
-    100% {
-        background-position: -200% 0;
-    }
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
 }
 
+/* ============================================================
+   DAILY FEATURE + HOMEPAGE IMAGE BLOCKS
+   ============================================================ */
+
+.betascreen {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.5);
+    transition: 0.3s;
+}
+
+.betascreen:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.7);
+}
+
+/* ============================================================
+   ARCHIVE PAGE — CLASSIC CARD STYLE
+   ============================================================ */
+
+.card {
+    width: 250px;
+    height: 400px;
+    background-color: rgb(42, 42, 42);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    overflow: hidden;
+    transition: 0.2s ease;
+    text-align: center;
+}
+
+/* OLD hover style */
+.card:hover {
+    transform: scale(1.05);
+    background-color: rgb(53, 53, 53);
+    box-shadow: 0px 30px 42px rgba(0,0,0,1);
+}
+
+.card .blurred-img {
+    width: 250px;
+    height: 250px;
+
+    /* FIXED SCALING — required */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    transition: 0.2s;
+}
+
+.card:hover .blurred-img {
+    transform: scale(0.97);
+    box-shadow: 0 0 2px 2px rgb(53, 53, 53) inset;
+}
+
+.cocococo {
+    padding: 10px 16px;
+    color: white;
+}
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+
+.goodbtn {
+    display: inline-block;
+    border-radius: 10px;
+    background: white;
+    color: black;
+    padding: 14px 16px;
+    font-family: "Courier New", monospace;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px rgba(0,0,0,1);
+    transition: 0.3s ease;
+}
+
+.goodbtn:hover {
+    transform: translateY(-3px) scale(1.15);
+    background: linear-gradient(124deg, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 200% 100%;
+    animation: rainbow 10s linear infinite;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+@keyframes rainbow {
+    0% { background-position: 0; }
+    100% { background-position: 800% 0; }
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
 
 footer {
     background: rgba(0, 0, 0, 0.9);
@@ -251,136 +249,66 @@ footer {
 .footer-content {
     max-width: 800px;
     margin: 0 auto;
-    text-align: center;
 }
 
 .disclaimer {
     color: #aaa;
     font-size: 0.9rem;
     line-height: 1.6;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
 
-/* Utility Classes */
-.site-notice {
-    margin: 20px 0;
-    padding: 10px;
-    background: rgba(255, 0, 0, 0.1);
-    border-radius: 5px;
-}
+/* ============================================================
+   RESPONSIVE DESIGN
+   ============================================================ */
 
-.credit {
-    text-align: center;
-    margin-top: 40px;
-    color: #888;
-    font-size: 0.9rem;
-}
-
-
-@media screen and (max-width: 768px) {
-    .hero h1 {
-        font-size: 2.5rem;
-    }
-
+@media screen and (max-width: 1039px) {
     .pagelogoimg {
-        width: 200px;
-        height: 50px;
-    }
-
-    .topnav {
-        flex-direction: column;
-        padding: 10px;
+        width: 240px;
+        height: 60px;
     }
 
     .nav-links {
-        width: 100%;
         justify-content: center;
     }
 
-    .topbtn,
-    .topbtnACTIVE {
-        padding: 10px 15px;
-        font-size: 14px;
+    .card {
+        width: 90%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .card .blurred-img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
     }
 
     .goodbtn {
-        min-width: 150px;
-        padding: 12px 20px;
-        font-size: 1rem;
-    }
-
-    .content {
-        padding: 10px;
-        width: 95%;
+        padding: 8px 12px;
+        font-size: 0.9rem;
     }
 }
 
 @media screen and (max-width: 480px) {
-    .hero h1 {
-        font-size: 2rem;
+    .pagelogoimg {
+        width: 200px;
+        height: 50px;
     }
-
-    .lead {
-        font-size: 1rem;
-    }
-
-    .cta-buttons {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .goodbtn {
-        width: 100%;
-        max-width: 250px;
+    
+    h1 {
+        font-size: 1.8em;
     }
 }
-
-
 
 .card {
-
-    /* Add shadows to create the "card" effect */
-    box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.5);
-    transition: 0.2s;
-    width: 250px;
-    height: 335px;
-    background-color: rgb(42, 42, 42);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    overflow: hidden;
-    align-items: center;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
-    background: rgb(53, 53, 53);
-}
-
-.card .blurred-img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.card:hover .blurred-img {
-    transform: scale(1.05);
-}
-
-
-.topbtn:focus,
-.topbtnACTIVE:focus,
-.goodbtn:focus {
-    outline: 2px solid #4d90fe;
-    outline-offset: 2px;
-}
-
+/* ============================================================
+   PRINT MODE
+   ============================================================ */
 
 @media print {
-
     .topnav,
-    .cta-buttons,
-    .site-notice {
+    .site-notice,
+    .cta-buttons {
         display: none;
     }
 
