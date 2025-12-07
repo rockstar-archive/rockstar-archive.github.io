@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url("images/bg.webp");
+    background-color: black;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -172,7 +172,7 @@ h1 {
 .goodbtn:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-    background: linear-gradient(45deg, #ff2400, #e81d1d, #e8b71d);
+    background: linear-gradient(45deg, #98BEEE, #DF2567);
     color: white;
     animation: gradientShift 3s ease infinite;
 }
@@ -181,7 +181,13 @@ h1 {
     background: #5865F2;
     color: white;
 }
-
+.discord-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(180deg, #5865F2, #1a1e49);
+    color: white;
+    animation: gradientShift 3s ease infinite;
+}
 
 .daily-feature {
     text-align: center;
@@ -258,6 +264,7 @@ footer {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
+    background-color: black;
 }
 
 .disclaimer {
@@ -407,3 +414,37 @@ footer {
         background: white;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

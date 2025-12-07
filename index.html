@@ -10,7 +10,8 @@
 	<link rel="stylesheet" href="dropdown.css">
 
 	<meta property="og:title" content="The Rockstar Games Archive">
-	<meta property="og:description" content="Archive of Rockstar Games-related content, beta screenshots, and historical preservation">
+	<meta property="og:description"
+		content="Archive of Rockstar Games-related content, beta screenshots, and historical preservation">
 	<meta property="og:url" content="https://rockstar-archive.github.io/index.html">
 	<meta property="og:image" content="https://rockstar-archive.github.io/images/logogo.jpg">
 	<meta property="og:image:type" content="image/png">
@@ -22,13 +23,15 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+		rel="stylesheet">
 	<script src="script.js" defer></script>
 </head>
 
 <body>
 	<header>
-		
+
 		<div class="topnav">
 			<a class="pagelogo" href="index.html" aria-label="Home">
 				<img class="pagelogoimg" src="images/logolp.webp" alt="Rockstar Games Archive Logo">
@@ -48,41 +51,36 @@
 			<div class="colorbar"></div>
 			<div class="content">
 				<section class="hero">
-					<br>
-					<h1>Welcome to <strong><i>The Rockstar Games Archive <img src="images/rstar.gif" alt="Rockstar Logo"></i></strong></h1>
-					<p class="lead">We archive <strong>Rockstar Games</strong>-related content for preservation and historical purposes.</p>
-					<br>
-					<div class="cta-buttons">
-						<a class="goodbtn" href="archive.html">Explore Archive</a>
-						<a class="goodbtn discord-btn" href="https://discord.gg/Yd3YamEAYK">
-							<i class="fa fa-discord"></i> Join Discord
-						</a>
+					<div class="hero-content">
+						<h1>Welcome to <span class="highlight">The Rockstar Games Archive</span> <img
+								src="images/rstar.gif" alt="Rockstar Logo"></h1>
+						<p class="lead">Preserving Rockstar Games history through comprehensive archival of beta
+							content, unreleased materials, and development history.</p>
+						<div class="cta-buttons">
+							<a class="goodbtn primary-cta" href="archive.html">
+								<i class="fa fa-archive"></i> Browse Archive
+							</a>
+							<a class="goodbtn discord-btn" href="https://discord.gg/Yd3YamEAYK">
+								<i class="fa fa-users"></i> Join Community
+							</a>
+						</div>
 					</div>
 				</section>
 
-				<br>
-				<div class="site-notice" aria-live="polite">
-					<marquee style="color: red;text-shadow: 1px 1px 2px red;">
-						🚧 THIS SITE IS IN DEVELOPMENT 🚧
-					</marquee>
+				<div class="site-notice" role="alert">
+					<div class="notice-content">
+						<i class="fa fa-warning"></i>
+						<span>This website is currently under development. Content and features may be added or
+							changed.</span>
+					</div>
 				</div>
 
-				<section class="daily-feature">
-					<h2>Daily Beta Screenshot</h2>
-					<figure>
-						<a id="betascreenlink" href="#" aria-describedby="betascreentext">
-							<img class="betascreen" id="betascreenimg" src="images/placeholder.webp" alt="Daily beta screenshot">
-						</a>
-						<figcaption id="betascreentext">Grand Theft Auto V</figcaption>
-					</figure>
-					<script>
-						dailyBetaScreenshot();
-					</script>
-					<br><br>
-				</section>
 
-				<div class="credit">
-					<p><i>greensci / franklin_clinton @2025</i></p>
+				<div class="content-footer">
+					<div class="credit">
+						<p><i class="fa fa-code"></i> programmed by greensci / franklin_clinton <span class="year">©
+								2025</span></p>
+					</div>
 				</div>
 			</div>
 			<div class="bottom"></div>
