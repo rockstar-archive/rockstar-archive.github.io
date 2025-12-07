@@ -113,7 +113,13 @@ header {
     text-align: center;
     padding: 40px 20px;
 }
-
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+}
 .hero h1 {
     font-size: 3.5rem;
     margin-bottom: 20px;
@@ -357,10 +363,16 @@ footer {
 }
 
 .card .blurred-img {
-    width: 100%;
+
+    width: 250px;
     height: 250px;
-    object-fit: cover;
-    transition: transform 0.3s ease;
+    background-size: contain;
+
+    /* you need to match the shadow color to your background or image border for the desired effect*/
+    /*box-shadow: 0 0 8px 8px rgba(42, 42, 42, 255) inset;*/
+    transition: 0.2s;
+    overflow: hidden;
+
 }
 
 .card:hover .blurred-img {
