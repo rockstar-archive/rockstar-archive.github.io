@@ -1587,7 +1587,7 @@ footer {
 }
 
 .website-preview {
-	
+	height: 330px;
 	background-size: cover;
 	background-position: center;
 	position: relative;
