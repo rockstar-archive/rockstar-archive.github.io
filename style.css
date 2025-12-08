@@ -125,8 +125,12 @@ h1 {
 .hero h1 {
 	font-size: 3.5rem;
 	margin-bottom: 20px;
-	text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+background: linear-gradient(to right, #98BEEE, #DF2567);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	font-size: 4rem;
 }
+
 
 .hero h1 img {
 	height: 1em;
@@ -172,7 +176,7 @@ h1 {
 }
 
 .goodbtn:hover {
-	transform: translateY(-5px);
+	
 	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
 	background: linear-gradient(45deg, #98BEEE, #DF2567);
 	color: white;
@@ -460,7 +464,7 @@ footer {
 
 .stat-icon {
 	font-size: 2.5rem;
-	background: linear-gradient(to right, #98BEEE, #DF2567);
+	background: linear-gradient(to right, #98BEEE, #98BEEE, #DF2567, #DF2567);
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
 	margin-bottom: 15px;
@@ -632,11 +636,25 @@ footer {
 
 
 .highlight {
-	background: linear-gradient(to right, #98BEEE, #DF2567);
-	-webkit-text-fill-color: transparent;
-	-webkit-background-clip: text;
+  background: linear-gradient(
+    90deg,
+    #98BEEE, #DF2567, #98BEEE, #DF2567, #98BEEE
+  );
+  text-shadow: 0 20px 5px rgba(0, 0, 0, 0.3);
+  background-size: 150% 100%;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 5rem;
+  animation: shimmer 3s infinite linear;
+  font-weight: 900;
+  
 }
 
+@keyframes shimmer {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 300% 50%; }
+}
 
 
 
