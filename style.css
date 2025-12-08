@@ -717,7 +717,9 @@ footer {
     
     .card-content h3 i {
       background: linear-gradient(to right, #98BEEE, #DF2567); -webkit-text-fill-color: transparent; -webkit-background-clip: text; 
+	 
     }
+	
     
     .card-content p {
       color: #bbb;
@@ -943,6 +945,7 @@ footer {
 		
 		.article-title i {
 			background: linear-gradient(to right, #98BEEE, #DF2567); -webkit-text-fill-color: transparent; -webkit-background-clip: text; 
+			
 		}
 		
 		.article-text {
