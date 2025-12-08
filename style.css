@@ -834,7 +834,17 @@ footer {
 	font-size: 0.75rem;
 	font-weight: 600;
 }
-
+.card-dev {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	background: linear-gradient(to right, #ff3232, #b4003f);
+	color: white;
+	padding: 4px 10px;
+	border-radius: 20px;
+	font-size: 0.75rem;
+	font-weight: 600;
+}
 
 
 /* Animations */
