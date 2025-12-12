@@ -1778,3 +1778,29 @@ footer {
 		font-size: 1.5rem;
 	}
 }
+
+/* Webarchive Search */
+.search-container {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0 30px;
+}
+
+#siteSearch {
+    width: 80%;
+    max-width: 500px;
+    padding: 12px 15px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 8px;
+    border: 2px solid #444;
+    background: #1c1c1c;
+    color: #fff;
+    transition: 0.2s;
+}
+
+#siteSearch:focus {
+    border-color: #f39c12;
+    outline: none;
+    box-shadow: 0 0 8px rgba(243, 156, 18, 0.4);
+}
