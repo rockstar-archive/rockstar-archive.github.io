@@ -5,13 +5,26 @@
   <meta charset="UTF-8">
   <link rel="shortcut icon" type="image/png" href="images/favicon.webp">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rockstar Games Archive - Comprehensive collection of preserved Rockstar Games content">
 
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="dropdown.css">
 
+  <meta property="og:title" content="Rockstar Games Archive - Collections">
+  <meta property="og:description"
+    content="Access our comprehensive archive of Rockstar Games websites, builds, articles, and development materials">
+  <meta property="og:url" content="https://rockstar-archive.github.io/archive.html">
+  <meta property="og:image" content="https://rockstar-archive.github.io/images/logogo.jpg">
+
   <title>Rockstar Games Archive - Archives</title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
 
   <style>
     .card-link.disabled {
@@ -33,16 +46,14 @@
 </head>
 
 <body>
-
   <header>
     <div class="topnav">
-      <a class="pagelogo" href="index.html">
-        <img class="pagelogoimg" src="images/logolp.webp">
+      <a class="pagelogo" href="index.html" aria-label="Home">
+        <img class="pagelogoimg" src="images/logolp.webp" alt="Rockstar Games Archive Logo">
       </a>
-
       <nav class="nav-links">
         <a class="topbtn" href="index.html">Home</a>
-        <a class="topbtnACTIVE" href="archive.html">Archives</a>
+        <a class="topbtnACTIVE" href="archive.html" aria-current="page">Archives</a>
         <a class="topbtn" href="news.html">News</a>
         <a class="topbtn" href="credits.html">Credits</a>
       </nav>
@@ -54,27 +65,32 @@
       <div class="colorbar"></div>
 
       <section class="hero">
-        <h1>Archive Collections</h1>
-        <p>Explore our comprehensive collection of preserved Rockstar Games content.</p>
+        <h1 class="fade-in">Archive Collections</h1>
+        <p class="lead slide-up">
+          Explore our comprehensive collection of preserved Rockstar Games content, from early beta builds to complete website archives.
+        </p>
       </section>
 
       <section class="archive-section">
         <div class="section-header">
           <h2><i class="fa fa-folder-open"></i> Primary Archives</h2>
+          <p>Core collections of preserved Rockstar Games content</p>
         </div>
 
         <div class="cards-grid">
 
-          <!-- Website Archives -->
+          <!-- Website Archives (DISABLED) -->
           <div class="archive-card">
             <span class="card-badge">Temporarily Down</span>
             <a class="card-link disabled" href="javascript:void(0)">
               <div class="card-icon">
-                <img src="images/other/rockstarlogo.webp">
+                <img src="images/other/rockstarlogo.webp" alt="Website Archives">
               </div>
               <div class="card-content">
                 <h3><i class="fa fa-globe"></i> Website Archives</h3>
-                <p>Complete recreations and snapshots of Rockstar websites.</p>
+                <p>
+                  Complete recreations and snapshots of official Rockstar Games websites throughout history, including promotional sites and etc.
+                </p>
 
                 <p class="down-note">
                   THE SERVER IS CURRENTLY HAVEING ISSUES WE ARE WORKING TO RESTORE THE ARCHIVE WE APOLOGIZE FOR THE INCONVENIENCE.
@@ -84,20 +100,24 @@
                   <span class="card-type">Web Preservation</span>
                   <span class="card-size">Offline</span>
                 </div>
+                <br>
+                <i class="fa fa-arrow-right card-arrow"></i>
               </div>
             </a>
           </div>
 
-          <!-- Article Archive -->
+          <!-- Article Archive (DISABLED) -->
           <div class="archive-card">
             <span class="card-badge">Temporarily Down</span>
             <a class="card-link disabled" href="javascript:void(0)">
               <div class="card-icon">
-                <img src="images/other/articleslogo.webp">
+                <img src="images/other/articleslogo.webp" alt="Article Archive">
               </div>
               <div class="card-content">
                 <h3><i class="fa fa-newspaper-o"></i> Article Archive</h3>
-                <p>Over 1900 curated articles and reviews.</p>
+                <p>
+                  Over 1900 curated articles, reviews, and features covering Rockstar Games titles from various publications and time periods.
+                </p>
 
                 <p class="down-note">
                   THE SERVER IS CURRENTLY HAVEING ISSUES WE ARE WORKING TO RESTORE THE ARCHIVE WE APOLOGIZE FOR THE INCONVENIENCE.
@@ -107,6 +127,7 @@
                   <span class="card-type">Documentation</span>
                   <span class="card-size">Offline</span>
                 </div>
+                <i class="fa fa-arrow-right card-arrow"></i>
               </div>
             </a>
           </div>
@@ -114,8 +135,60 @@
         </div>
       </section>
 
+      <section class="archive-section">
+        <div class="section-header">
+          <h2><i class="fa fa-cloud-download"></i> Archive Vaults</h2>
+          <p>Platforms hosting our preserved content collections</p>
+        </div>
+
+        <div class="cards-grid">
+
+          <div class="archive-card">
+            <a href="https://mega.nz/folder/pasETKzI#C5SI_SxvKwVg6KKt1GnaLw" class="card-link">
+              <div class="card-icon">
+                <img src="images/other/megalogo.webp" alt="MEGA Archives">
+              </div>
+              <div class="card-content">
+                <h3><i class="fa fa-cloud"></i> MEGA Archives</h3>
+                <p>Complete article repository hosted on MEGA, containing preserved materials.</p>
+                <i class="fa fa-arrow-right card-arrow"></i>
+              </div>
+            </a>
+          </div>
+
+          <div class="archive-card">
+            <a href="https://discord.gg/Yd3YamEAYK" class="card-link">
+              <div class="card-icon">
+                <img src="images/other/discordlogo.webp" alt="Discord Server">
+              </div>
+              <div class="card-content">
+                <h3><i class="fa fa-comments"></i> Discord Community</h3>
+                <p>Join our community for access to private archives and discussions.</p>
+                <i class="fa fa-arrow-right card-arrow"> Join</i>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+      <div class="content-footer">
+        <div class="credit">
+          <p><i class="fa fa-code"></i> programmed by greensci / franklin_clinton <span class="year">© 2026</span></p>
+        </div>
+        <br>
+      </div>
     </div>
+    <div class="bottom"></div>
   </main>
+
+  <footer>
+    <div class="footer-content">
+      <p class="disclaimer">
+        This website is not affiliated with Take-Two Interactive or any of its subsidiaries.
+      </p>
+    </div>
+  </footer>
 
 </body>
 </html>
