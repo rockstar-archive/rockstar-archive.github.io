@@ -234,6 +234,7 @@ figcaption {
 .colorbar {
 	height: 5px;
 	width: 100%;
+	top: 165px;
 	background: linear-gradient(90deg,
 			red 0%,
 			orange 16.66%,
@@ -1822,11 +1823,14 @@ footer {
 }
 
 .dep-banner {
+	position: fixed;
 	width: 100%;
 	background: linear-gradient(90deg, #2d1060, #2d1060, #1a0a2e, #2d1060);
 	background-size: 300% 100%;
 	animation: shimmerBanner 6s linear infinite;
+	
 	padding: 11px 20px;
+	top: 120px;
 	text-align: center;
 	font-family: "Poppins", sans-serif;
 	font-size: 14px;
@@ -1838,6 +1842,7 @@ footer {
 	align-items: center;
 	justify-content: center;
 	gap: 10px;
+	z-index: 100000;
 }
 
 .dep-banner .dep-highlight {
