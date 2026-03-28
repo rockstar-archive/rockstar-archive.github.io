@@ -125,7 +125,7 @@ h1 {
 .hero h1 {
 	font-size: 3.5rem;
 	margin-bottom: 20px;
-background: linear-gradient(to right, #98BEEE, #DF2567);
+	background: linear-gradient(to right, #98BEEE, #DF2567);
 	-webkit-text-fill-color: transparent;
 	-webkit-background-clip: text;
 	font-size: 4rem;
@@ -165,7 +165,7 @@ background: linear-gradient(to right, #98BEEE, #DF2567);
 	color: black;
 	padding: 15px 30px;
 	text-decoration: none;
-	
+
 	font-weight: bold;
 	font-size: 1.1rem;
 	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
@@ -176,7 +176,7 @@ background: linear-gradient(to right, #98BEEE, #DF2567);
 }
 
 .goodbtn:hover {
-	
+
 	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
 	background: linear-gradient(45deg, #98BEEE, #DF2567);
 	color: white;
@@ -636,24 +636,27 @@ footer {
 
 
 .highlight {
-  background: linear-gradient(
-    90deg,
-    #98BEEE, #DF2567, #98BEEE, #DF2567, #98BEEE
-  );
-  text-shadow: 0 20px 5px rgba(0, 0, 0, 0.3);
-  background-size: 150% 100%;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  font-size: 5rem;
-  animation: shimmer 3s infinite linear;
-  font-weight: 900;
-  
+	background: linear-gradient(90deg,
+			#98BEEE, #DF2567, #98BEEE, #DF2567, #98BEEE);
+	text-shadow: 0 20px 5px rgba(0, 0, 0, 0.3);
+	background-size: 150% 100%;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	background-clip: text;
+	font-size: 5rem;
+	animation: shimmer 3s infinite linear;
+	font-weight: 900;
+
 }
 
 @keyframes shimmer {
-  0% { background-position: 0% 50%; }
-  100% { background-position: 300% 50%; }
+	0% {
+		background-position: 0% 50%;
+	}
+
+	100% {
+		background-position: 300% 50%;
+	}
 }
 
 
@@ -852,6 +855,7 @@ footer {
 	font-size: 0.75rem;
 	font-weight: 600;
 }
+
 .card-dev {
 	position: absolute;
 	top: 15px;
@@ -1411,7 +1415,7 @@ footer {
 }
 
 .member-link:hover {
-	
+
 	box-shadow: 0 5px 15px rgba(114, 53, 255, 0.3);
 	transform: translateY(-2px);
 }
@@ -1781,26 +1785,77 @@ footer {
 
 /* Webarchive Search */
 .search-container {
-    width: 100%;
-    text-align: center;
-    margin: 20px 0 30px;
+	width: 100%;
+	text-align: center;
+	margin: 20px 0 30px;
 }
 
 #siteSearch {
-    width: 80%;
-    max-width: 500px;
-    padding: 12px 15px;
-    font-size: 16px;
-    font-family: 'Poppins', sans-serif;
-    border-radius: 8px;
-    border: 2px solid #444;
-    background: #1c1c1c;
-    color: #fff;
-    transition: 0.2s;
+	width: 80%;
+	max-width: 500px;
+	padding: 12px 15px;
+	font-size: 16px;
+	font-family: 'Poppins', sans-serif;
+	border-radius: 8px;
+	border: 2px solid #444;
+	background: #1c1c1c;
+	color: #fff;
+	transition: 0.2s;
 }
 
 #siteSearch:focus {
-    border-color: #f39c12;
-    outline: none;
-    box-shadow: 0 0 8px rgba(243, 156, 18, 0.4);
+	border-color: #f39c12;
+	outline: none;
+	box-shadow: 0 0 8px rgba(243, 156, 18, 0.4);
+}
+
+/* deprecatioonnn stufff - greenci*/
+
+@keyframes shimmerBanner {
+	0% {
+		background-position: 0% 50%;
+	}
+
+	100% {
+		background-position: 300% 50%;
+	}
+}
+
+.dep-banner {
+	width: 100%;
+	background: linear-gradient(90deg, #2d1060, #2d1060, #1a0a2e, #2d1060);
+	background-size: 300% 100%;
+	animation: shimmerBanner 6s linear infinite;
+	padding: 11px 20px;
+	text-align: center;
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	color: #fff;
+	letter-spacing: 0.4px;
+	border-bottom: 1px solid rgba(152, 190, 238, 0.3);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}
+
+.dep-banner .dep-highlight {
+	background: linear-gradient(90deg, #98BEEE, #DF2567, #98BEEE);
+	background-size: 200% 100%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	animation: shimmerBanner 3s linear infinite;
+	font-weight: 700;
+}
+
+.dep-banner a {
+	color: #98BEEE;
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+
+.dep-banner a:hover {
+	color: #DF2567;
 }
