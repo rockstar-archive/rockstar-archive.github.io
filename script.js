@@ -42,54 +42,94 @@ function getRandomInt(min, max) {
 
 const div = document.getElementById('secret');
 const unlc = document.getElementById('unlockerscrt');
+const unlceee = document.getElementById('unlockershut');
 
 div.addEventListener('mouseenter', () => {
     console.log('Mouse entered!');
     times++;
-    if (times === 3) {
+    if (times % 3 === 0) {
         console.log('secreeeeet');
-       document.getElementById("texty2").innerHTML = "debug mode activated";
-      
+        document.getElementById("texty2").innerHTML = "debug mode activated";
+
     }
 
 });
 unlc.addEventListener('mouseenter', () => {
-    if (times === 3) {
+    if (times % 3 === 0) {
         console.log('secreeeeet');
-      
+
         setSecret();
     }
 
 });
 
+unlceee.addEventListener('mouseenter', () => {
+    if (times % 3 === 0) {
+        console.log('secreeeeet');
+
+        setShuttime();
+    }
+
+});
+
+function setShuttime() {
+    var countDownDate = new Date("April 16, 2026").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function () {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Output the result in an element with id="demo"
+        document.getElementById("texty1").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s <br> left until h0rizon shut down";
+
+        // If the count down is over, write some text 
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("texty1").innerHTML = "EXPIRED";
+        }
+    }, 1000);
+}
 
 
-function setSecret(){
+
+function setSecret() {
     var countDownDate = new Date("May 28, 2026").getTime();
 
-		// Update the count down every 1 second
-		var x = setInterval(function () {
+    // Update the count down every 1 second
+    var x = setInterval(function () {
 
-			// Get today's date and time
-			var now = new Date().getTime();
+        // Get today's date and time
+        var now = new Date().getTime();
 
-			// Find the distance between now and the count down date
-			var distance = countDownDate - now;
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
 
-			// Time calculations for days, hours, minutes and seconds
-			var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-			// Output the result in an element with id="demo"
-			document.getElementById("texty1").innerHTML = days + "d " + hours + "h "
-				+ minutes + "m " + seconds + "s <br> left until updating Buzzheavier";
+        // Output the result in an element with id="demo"
+        document.getElementById("texty1").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s <br> left until updating Buzzheavier";
 
-			// If the count down is over, write some text 
-			if (distance < 0) {
-				clearInterval(x);
-				document.getElementById("texty1").innerHTML = "EXPIRED";
-			}
-		}, 1000);
+        // If the count down is over, write some text 
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("texty1").innerHTML = "EXPIRED";
+        }
+    }, 1000);
 }
