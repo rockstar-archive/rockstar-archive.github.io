@@ -111,7 +111,7 @@ header {
 
 .hero {
 	text-align: center;
-	padding: 40px 20px;
+	padding: 70px 20px;
 }
 
 h1 {
@@ -246,6 +246,7 @@ figcaption {
 			red 100%);
 	background-size: 200% 100%;
 	position: fixed;
+	
 	animation: gradientShift 10s ease infinite;
 	z-index: 100000;
 }
