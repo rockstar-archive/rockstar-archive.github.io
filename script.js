@@ -49,9 +49,9 @@ div.addEventListener('mouseenter', () => {
 
 });
 unlc.addEventListener('mouseenter', () => {
-    if (times === 3) {
+    if (times === 4) {
         console.log('secreeeeet');
-       
+       document.getElementById("texty1").innerHTML = "debug mode activated";
         setSecret();
     }
 
@@ -84,7 +84,7 @@ function setSecret(){
 			// If the count down is over, write some text 
 			if (distance < 0) {
 				clearInterval(x);
-				document.getElementById("demo").innerHTML = "EXPIRED";
+				document.getElementById("texty1").innerHTML = "EXPIRED";
 			}
 		}, 1000);
 }
