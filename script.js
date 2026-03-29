@@ -48,7 +48,7 @@ div.addEventListener('mouseenter', () => {
     times++;
     if (times === 3) {
         console.log('secreeeeet');
-       document.getElementById("texty1").innerHTML = "debug mode activated";
+       document.getElementById("texty2").innerHTML = "debug mode activated";
       
     }
 
