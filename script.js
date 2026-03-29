@@ -46,12 +46,17 @@ const unlc = document.getElementById('unlockerscrt');
 div.addEventListener('mouseenter', () => {
     console.log('Mouse entered!');
     times++;
+    if (times === 3) {
+        console.log('secreeeeet');
+       document.getElementById("texty1").innerHTML = "debug mode activated";
+      
+    }
 
 });
 unlc.addEventListener('mouseenter', () => {
-    if (times === 4) {
+    if (times === 3) {
         console.log('secreeeeet');
-       document.getElementById("texty1").innerHTML = "debug mode activated";
+      
         setSecret();
     }
 
