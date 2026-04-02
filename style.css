@@ -234,7 +234,7 @@ figcaption {
 .colorbar {
 	height: 5px;
 	width: 100%;
-	top: 165px;
+	/*top: 165px;*/
 	background: linear-gradient(90deg,
 			red 0%,
 			orange 16.66%,

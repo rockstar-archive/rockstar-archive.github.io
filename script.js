@@ -1,4 +1,9 @@
 let times = 0;
+if(screen.width === 320){
+document.getElementById("secret").src = "images/logolpgif.gif"
+}
+
+log("Your screen resolution is: " + screen.width + "x" + screen.height);
 
 function dailyBetaScreenshot() {
     const today = new Date().toISOString().split('T')[0];
