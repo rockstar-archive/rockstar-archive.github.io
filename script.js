@@ -1,6 +1,6 @@
 let times = 0;
-if(screen.width === 320){
-document.getElementById("secret").src = "images/logolpgif.gif"
+if(screen.width <= 321){
+document.getElementById("3ds").innerHTML = "Are you visiting this page on a 3DS? swag.";
 }
 
 log("Your screen resolution is: " + screen.width + "x" + screen.height);
