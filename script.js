@@ -1,10 +1,13 @@
-var det = document.getElementById("3ds");
-if (det) {
-    var w = screen.width;
-    if (w <= 320) {
-        det.innerHTML = "Are you visiting this page on a 3DS? swag.";
-    } else {
-        det.innerHTML = "TESTING STESITNGN";
+window.onload = function () {
+    var det = document.getElementById("3ds");
+    if (det) {
+        var w = screen.width;
+        if (w <= 320) {
+            det.innerHTML = "Are you visiting this page on a 3DS? swag.";
+            window.location.href = 'https://rockstar-archive.github.io/legacy/index.html';
+        } else {
+            det.innerHTML = "TESTING STESITNGN";
+        }
     }
 }
 
