@@ -7,7 +7,8 @@
   <title>Rockstar Games Archive</title>
   <style type="text/css">
     body {
-      background-color: #111111;
+      /*background-color: #111111;*/
+      background-image: url("../images/bglp.gif");
       color: #dddddd;
       font-family: Arial, sans-serif;
       font-size: 13px;
@@ -109,14 +110,23 @@
       margin: 4px 0;
       line-height: 1.5;
     }
+
+    .pagelogoimg {
+      width: 240px;
+      height: 60px;
+      object-fit: contain;
+    }
   </style>
 </head>
 
 <body>
- 
+
 
   <div class="header">
-    <div><strong style="color:#DF2567; font-size:16px;">Rockstar Games Archive</strong></div>
+    <a class="pagelogo" href="https://rockstar-archive.github.io/index.html" aria-label="Home">
+      <img class="pagelogoimg" src="https://rockstar-archive.github.io/images/logolpgif.gif"
+        alt="Rockstar Games Archive Logo"></img>
+    </a>
     <div class="nav">
       <a href="index.html">[Home]</a>
       <a href="archive.html">[Archives]</a>

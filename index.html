@@ -46,7 +46,7 @@
 			</nav>
 		</div>
 	</header>
-	<p id="3ds"></p>
+
 	<main>
 
 		<div class="holder">
@@ -66,6 +66,7 @@
 							content, unreleased materials, and development history.</p>
 
 						<br>
+						<p id="3ds"></p>
 						<div class="cta-buttons">
 							<a id="unlockerscrt" class="goodbtn primary-cta pulse-on-hover" href="archive.html">
 								<i class="fa fa-archive"></i> Browse Archive
@@ -181,24 +182,7 @@
 			</p>
 		</div>
 	</footer>
-	<script type="text/javascript">
-		// Use old-style JS for 3DS WebKit compatibility
 
-		window.onload = function () {
-			var det = document.getElementById("3ds");
-			if (det) {
-				var w = screen.width;
-				if (w <= 320) {
-					det.innerHTML = "Are you visiting this page on a 3DS? swag.";
-					window.location.href = 'https://rockstar-archive.github.io/legacy/index.html';
-				} else {
-					det.innerHTML = "TESTING STESITNGN";
-				}
-			}
-		};
-
-
-	</script>
 </body>
 
 </html>
