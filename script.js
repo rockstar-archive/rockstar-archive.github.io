@@ -1,4 +1,6 @@
 window.onload = function () {
+    
+
     var det = document.getElementById("3ds");
     if (det) {
         var w = screen.width;
@@ -74,7 +76,7 @@ window.onload = function () {
     }
 
 
-    alert("Name:" + browserName + " Version " + majorVersion)
+    alert("Name:" + browserName + " Version " + majorVersion);
 };
 
 
