@@ -1,23 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3ds test</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=240">
+<title>3DS Test</title>
+<style>
+body {
+  font-family: sans-serif;
+  font-size: 14px;
+  margin: 4px;
+  background: #fff;
+  color: #000;
+}
+p { margin: 6px 0; }
+</style>
 </head>
-
 <body>
-    <p id="testy">hi - didnt work</p>
-    <p id="res"></p>
-    <script>
-        var hi = document.getElementById("testy");
-        hi.innerHTML = "worked !!!";
-
-      
-     document.getElementById("res").innerHTML = "Your screen resolution is: " + screen.width + "x" + screen.height;
-    
-    </script>
+<p id="testy">hi - didnt work</p>
+<p id="res"></p>
+<p id="det"></p>
+<script type="text/javascript">
+// Use old-style JS for 3DS WebKit compatibility
+window.onload = function() {
+  var testy = document.getElementById("testy");
+  if (testy) { testy.innerHTML = "worked !!!"; }
+ 
+  var res = document.getElementById("res");
+  if (res) {
+    res.innerHTML = "Resolution: " + screen.width + "x" + screen.height;
+  }
+ 
+  var det = document.getElementById("det");
+  if (det) {
+    var w = screen.width;
+    if (w <= 400) {
+      det.innerHTML = "Looks like a 3DS! Top screen is 400px wide.";
+    } else {
+      det.innerHTML = "Not a 3DS (width: " + w + "px).";
+    }
+  }
+};
+</script>
 </body>
-
 </html>
