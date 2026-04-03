@@ -1,6 +1,10 @@
 let times = 0;
-if(screen.width <= 321){
-document.getElementById("3ds").innerHTML = "Are you visiting this page on a 3DS? swag.";
+var det = document.getElementById("3ds");
+if (det) {
+    var w = screen.width;
+    if (w <= 320) {
+        det.innerHTML = "Are you visiting this page on a 3DS? swag.";
+    } 
 }
 
 log("Your screen resolution is: " + screen.width + "x" + screen.height);
