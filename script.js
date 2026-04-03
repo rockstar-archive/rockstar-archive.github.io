@@ -12,7 +12,7 @@ window.onload = function () {
         }
     }
 
-    var nVer = navigator.appVersion;
+   /* var nVer = navigator.appVersion;
     var nAgt = navigator.userAgent;
     var browserName = navigator.appName;
     var fullVersion = '' + parseFloat(navigator.appVersion);
@@ -75,8 +75,14 @@ window.onload = function () {
         majorVersion = parseInt(navigator.appVersion, 10);
     }
 
+    if(browserName === "Firefox"){
+        if(majorVersion <= 37){
+            window.location.href = 'https://rockstar-archive.github.io/legacy/index.html';
+    }
+    }
 
-    alert("Name:" + browserName + " Version " + majorVersion);
+
+    alert("Name:" + browserName + " Version " + majorVersion);*/
 };
 
 
