@@ -111,7 +111,7 @@ header {
 
 .hero {
 	text-align: center;
-	padding: 70px 20px;
+	padding: 40px 20px;
 }
 
 h1 {
@@ -141,7 +141,7 @@ h1 {
 .lead {
 	font-size: 1.2rem;
 	color: #e0e0e0;
-	margin-bottom: 30px;
+	margin-bottom: 15px;
 	max-width: 600px;
 	margin-left: auto;
 	margin-right: auto;
@@ -705,7 +705,7 @@ footer {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 	gap: 30px;
-	margin-top: 30px;
+	margin-top: 10px;
 }
 
 .archive-card {
